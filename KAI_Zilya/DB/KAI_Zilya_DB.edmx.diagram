@@ -5,15 +5,15 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="e7161168c540444db003cd4852298918" Name="Diagram1">
-        <EntityTypeShape EntityType="KAI_ZilyaModel.Evaluations" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="KAI_ZilyaModel.Specialties" Width="1.5" PointX="1.5" PointY="12.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="KAI_ZilyaModel.Students" Width="1.5" PointX="0.75" PointY="7.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="KAI_ZilyaModel.Subjects" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="KAI_ZilyaModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
-        <AssociationConnector Association="KAI_ZilyaModel.FK_Evaluations_Students" ManuallyRouted="false" />
-        <AssociationConnector Association="KAI_ZilyaModel.FK_Evaluations_Subjects" ManuallyRouted="false" />
-        <AssociationConnector Association="KAI_ZilyaModel.FK_Evaluations_Subjects1" ManuallyRouted="false" />
-        <AssociationConnector Association="KAI_ZilyaModel.FK_Students_Specialties" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="KAI_ZilyaModel.Evaluations" Width="1.5" PointX="3" PointY="1" />
+        <EntityTypeShape EntityType="KAI_ZilyaModel.Specialties" Width="1.5" PointX="1.5" PointY="12.5" />
+        <EntityTypeShape EntityType="KAI_ZilyaModel.Students" Width="1.5" PointX="0.75" PointY="7.375" />
+        <EntityTypeShape EntityType="KAI_ZilyaModel.Subjects" Width="1.5" PointX="0.75" PointY="1.5" />
+        <EntityTypeShape EntityType="KAI_ZilyaModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="0.75" />
+        <AssociationConnector Association="KAI_ZilyaModel.FK_Evaluations_Students" />
+        <AssociationConnector Association="KAI_ZilyaModel.FK_Evaluations_Subjects" />
+        <AssociationConnector Association="KAI_ZilyaModel.FK_Evaluations_Subjects1" />
+        <AssociationConnector Association="KAI_ZilyaModel.FK_Students_Specialties" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -95,7 +95,9 @@ namespace KAI_Zilya
             MessageBoxResult dialogResult = MessageBox.Show("Вы действительно хотите безвозвратно удалить запись и все связанные с ней данные?", "Удаление", MessageBoxButton.YesNo);
             if (dialogResult == MessageBoxResult.Yes)
             {
-
+                Subjects subjects = bd_connection.connection.Subjects.Where(x => x.ID_Subjects == numberRecord).FirstOrDefault();
+                bd_connection.connection.Subjects.Remove(subjects);
+                bd_connection.connection.SaveChanges();
             }
         }
 
