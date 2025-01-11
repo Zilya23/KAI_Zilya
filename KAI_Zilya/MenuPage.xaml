@@ -1,0 +1,59 @@
+﻿<Page x:Class="KAI_Zilya.MenuPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:KAI_Zilya"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MenuPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="База данных &quot;Студент&quot;" Grid.Column="1"
+                   Grid.Row="1"
+                   FontSize="20"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"
+                   Foreground="Blue"/>
+
+        <Button x:Name="btn_Specialties" Content="Таблица &quot;Специальности&quot;"
+                Grid.Column="1"
+                Grid.Row="2"
+                Height="40"
+                Width="200" Click="btn_Specialties_Click"/>
+
+        <Button x:Name="btn_Subjects" Content="Таблица &quot;Предметы&quot;"
+                Grid.Column="1"
+                Grid.Row="3"
+                Height="40"
+                Width="200" Click="btn_Subjects_Click"/>
+
+        <Button x:Name="btn_Students" 
+                Content="Таблица &quot;Студенты&quot;"
+                Grid.Column="1"
+                Grid.Row="4"
+                Height="40"
+                Width="200"
+                Click="btn_Students_Click"/>
+
+        <Button x:Name="btn_Evaluations" Content="Таблица &quot;Оценки&quot;"
+                Grid.Column="1"
+                Grid.Row="5"
+                Height="40"
+                Width="200"/>
+    </Grid>
+</Page>
