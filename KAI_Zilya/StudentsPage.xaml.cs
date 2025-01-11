@@ -129,6 +129,28 @@ namespace KAI_Zilya
             MessageBoxResult dialogResult = MessageBox.Show("Сохрнаить изменения?", "Редактировать", MessageBoxButton.YesNo);
             if (dialogResult == MessageBoxResult.Yes)
             {
+                try
+                {
+                    studentsSelect.FIO = tb_FIO.Text.Trim();
+                    studentsSelect.Gender = tb_Gender.Text.Trim();
+                    studentsSelect.Address = tb_Address.Text.Trim();
+                    studentsSelect.Parents = tb_Parents.Text.Trim();
+                    studentsSelect.Phone = tb_Phone.Text.Trim();
+                    studentsSelect.Pasport_num = tb_Pasport.Text.Trim();
+                    studentsSelect.Credit_Card_Number = Convert.ToInt32(tb_CreditCard.Text.Trim());
+                    studentsSelect.Group = tb_Group.Text.Trim();
+                    studentsSelect.Course = Convert.ToInt32(tb_Course.Text.Trim());
+                    studentsSelect.ID_Specialties = (cb_Specialitets.SelectedItem as Specialties).ID_Specialties;
+                    studentsSelect.Full_Time_Education = cb_FullTime.IsChecked;
+                    bd_connection.connection.SaveChanges();
+                    MessageBox.Show("Успешно изменено");
+                    NavigationService.Navigate(new StudentsPage());
+                }
+                catch
+                {
+                    MessageBox.Show("Заполните все обязательные поля");
+                }
+
                 //if (tb_Title.Text.Trim().Length != 0 && tb_Description.Text.Trim().Length != 0)
                 //{
                 //    Specialties specialties = bd_connection.connection.Specialties.Where(x => x.ID_Specialties == numberRecord).FirstOrDefault();
